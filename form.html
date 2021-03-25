@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Form</title>
+</head>
+<style>
+body{
+    background-image: linear-gradient(rgba(4, 92, 124, 0.8),rgba(136, 215, 252, 0.7));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    color:white;
+}
+.btn{
+    color: cadetblue !important;
+    background-color: white !important;
+    border-color:cadetblue !important;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: rgb(73, 67, 67,0.4) !important;
+    color: white !important;
+    box-shadow:5px 5px 5px 0 rgb(18, 42, 43);
+}
+.hov:hover{
+    border:1px solid rgba(2, 17, 31, 0.6) !important;
+    box-shadow:5px 5px 5px 0 rgb(2, 38, 39);
+}
+.foc:focus{
+    background-color: rgb(73, 67, 67,0.4) !important;
+    color: white !important;
+}
+@media only screen and (min-width: 770px) {
+    .container{
+        margin-top: 40px;
+    }
+    form{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 768px) {
+.pad{
+    margin-bottom:10px;
+}
+}
+</style>
+<body>
+    <div class="container">
+                <form class="p-2">
+                    <div class="row">
+                        <h1>Customer Details</h1>
+                    </div>
+                    <div class="form-group row m-2">
+                        <label class="col-md-3 col-sm-12 col-form-label">Your Name</label> 
+                        <input class="pad col-md-3 col-sm-12 form-control mr-md-2 hov foc" type="text" name="fname" placeholder="First Name"> 
+                        <input class="col-md-3 col-sm-12 form-control hov foc" type="text" name="lname" placeholder="Last Name">                              
+                    </div>
+                    <div class="form-group row m-2">
+                        <label class="col-md-3 col-sm-12" for="">Your  Email</label> 
+                        <input class="col-md-3 col-sm-12 form-control hov foc" type="email" name="email" id="">
+                    </div>
+                    <div class="form-group row m-2">
+                        <label class="col-md-3 col-sm-12" for="">Phone</label> 
+                        <input class="col-md-3 col-sm-12 form-control hov foc" type="tel" name="tel" id="" placeholder="###">
+                    </div>
+                    <div class="form-group row m-2">                 
+                        <label class="col-md-3 col-sm-12" for="">WHat is your<br>estimated budget?</label> 
+                        <input class="col-md-3 col-sm-12 form-control hov foc" type="text" name="esbudget" id="">                      
+                    </div>
+                    <div class="form-group row m-2">
+                        <label class="col-md-3 col-sm-12" for="">In short what this<br>project is about?</label> 
+                        <textarea class="col-md-6 col-sm-12 form-control hov foc" rows="3"> </textarea>                    
+                    </div>     
+                    <div class="form-group row m-2">
+                        <label class="col-md-3 col-sm-12" for="">How important is<br>SEO for your website?</label>
+                        <select class="col-md-3 col-sm-12 form-control hov foc">
+                            <option value="Please select">Please select</option>
+                        </select>
+                    </div>
+                    <div class="form-group row m-2">                                                                
+                        <label class="col-md-3 col-sm-12 text-left" for="">Do you need<br>hosting and email?</label> 
+                        <div class="form-check">
+                            <label class="form-check-label" for="yes">
+                            <input class="form-check-input" type="radio" name="yesno" id="yes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" for="no">
+                            <input class="form-check-input" type="radio" name="yesno" id="no">No</label>
+                        </div>
+                    </div>
+                    <div class="row m-2">
+                        <input class="btn bg-dark text-light" type="submit" value="Submit Form">
+                    </div>
+                </form>
+    </div>
+</body>
+</html>
